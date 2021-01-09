@@ -1,0 +1,150 @@
+html{
+    background: #FFFFFC;
+    color: #0C0C0C;
+
+    font-size: 2.5vh;
+
+    font-family: monospace;
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div#menu{
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+div#menu a{
+    text-decoration: none;
+
+    margin: 1.5vh;
+    margin-right: 4vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+    color: #0C0C0C;
+}
+div#menu a:hover{
+    color: #2F97C1;
+    text-decoration: underline #2F97C1;
+}
+p#header{
+    color: #2F97C1;
+
+    font-weight: 900;
+    font-size: 5vh;
+}
+p#content{
+    line-height: 5vh;
+    font-size: 3vh;
+    margin-top: 10vh;
+    margin-bottom: 22vh;
+}
+a.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+
+    z-index: 9999;
+    width: 25%;
+    margin-left: 35%;
+    margin-bottom: 5vh;
+    padding: 1vh;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+    background: #FFFFFC;
+    color: #2F97C1;
+    border: solid #2F97C1 2px;
+}
+a.links:hover{
+    background: #2F97C1;
+    color: #FFFFFC;
+}
+svg{
+    pointer-events: none;
+    position: absolute;
+
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+div#albumL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 10vh;
+    margin-right: 10vh;
+}
+div#albumR{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    margin-left: 10vh;
+}
+div.left{
+    width: 100%;
+}
+@media screen and (max-width: 650px){
+    div#menu{
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+        background: #2F97C1;
+    }
+    div#menu a:hover{
+        color: #FFFFFC;
+        text-decoration: underline #FFFFFC;
+    }
+    p#header{
+        margin-top: 10vh;
+    }
+    svg{
+        display: none;
+    }
+    a.links{
+        width: auto;
+        margin: 5vh;
+    }
+    p#content{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    div#albumL{
+        flex-direction: column;
+
+        margin: 3vh;
+        
+        border-bottom: solid #0C0C0C 1px;
+    }
+    div#albumR{
+        flex-direction: column;
+
+        margin: 3vh;
+        
+        border-bottom: solid #0C0C0C 1px;
+    }
+}
